@@ -67,7 +67,7 @@ const  enqueueSnackbar  = useSnackbar();
   };
   const getHistory = async () => {
     await baseURL(`/user/history/${user._id}`).then((response) => {
-       console.log(response.data)
+    
        setHistory(response.data);
      });
   }
